@@ -1,0 +1,8 @@
+.RestaurantCategories {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    gap: 20px;
+    border: 1px solid black;
+    width: 80vw;
+}
