@@ -1,4 +1,4 @@
-import {RestaurantCategories} from "../../components/RestaurantCategories/component.jsx";
+import {RestaurantCategories} from "../../components/RestaurantTabs/component.jsx";
 import {RestaurantsList} from "../../components/RestaurantsList/component.jsx";
 
 export const RestaurantMainPage = ({restaurants}) => {
