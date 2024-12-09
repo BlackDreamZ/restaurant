@@ -1,18 +1,16 @@
 import {RestaurantTab} from "../RestaurantTab/component.jsx";
 import "./styles.css";
 
-export const RestaurantCategories = ({restaurants}) => {
+export const RestaurantCategories = ({restaurants, onRestaurantTabSelect}) => {
 
-    function onTabClick(index){
-        console.log(index);
-    }
+    if(!restaurants.length) return null;
 
     return (
         <ul className={'RestaurantCategories'}>
             {Array.from(new Set(restaurants)).map(
                 ({name}, index) => (
                 <li key={index}>
-                    <RestaurantTab onClick={() => onTabClick(index)}>{name}</RestaurantTab>
+                    <RestaurantTab onClick={() => onRestaurantTabSelect(name)}>{name}</RestaurantTab>
                 </li>
             ))}
         </ul>
