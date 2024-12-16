@@ -2,3 +2,11 @@
     display: flex;
     align-items: center;
 }
+
+.RestaurantItem__Dish-counter button {
+    margin: 0 10px;
+}
+
+.RestaurantItem__Dish-counter button:disabled {
+    background-color: gray;
+}

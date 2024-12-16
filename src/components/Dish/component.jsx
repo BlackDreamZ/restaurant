@@ -5,13 +5,15 @@ import './styles.css';
 export const Dish = ({dish}) => {
 
     const [counter, setCounter] = useState(0);
+    const MAX_QUANTITY = 5;
+    const MIN_QUANTITY = 0;
 
     function onClickIncrease(){
-        if (counter < 5) setCounter(counter => counter + 1);
+        setCounter(counter => counter + 1);
         return counter;
     }
     function onClickDecrease(){
-        if (counter > 0) setCounter(counter => counter - 1);
+        setCounter(counter => counter - 1);
         return counter;
     }
 
@@ -22,6 +24,11 @@ export const Dish = ({dish}) => {
         <div>
             {dish.name}
         </div>
-        <Counter counter={counter} onClickIncrease={() => onClickIncrease(counter)} onClickDecrease={() => onClickDecrease(counter)} />
+        <Counter
+            counter={counter}
+            minQuantity={MIN_QUANTITY}
+            maxQuantity={MAX_QUANTITY}
+            onClickIncrease={() => onClickIncrease(counter)}
+            onClickDecrease={() => onClickDecrease(counter)} />
     </div>)
 }
