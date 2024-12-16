@@ -1,0 +1,8 @@
+.RestaurantItem__Dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+}
