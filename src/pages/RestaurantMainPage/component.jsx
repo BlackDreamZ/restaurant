@@ -4,14 +4,14 @@ import React from "react";
 
 export const RestaurantMainPage = ({restaurants}) => {
 
-    const [selectedTab, setSelectedTab] = React.useState('');
-    console.log(selectedTab);
-    const filteredRestaurants = restaurants.filter(restaurant => restaurant.name === selectedTab || !selectedTab);
+    const [selectedRestaurantIndex, setSelectedRestaurantIndex] = React.useState(0);
+
+    const selectedRestaurant = restaurants[selectedRestaurantIndex];
 
     return (
         <>
-            <RestaurantCategories restaurants={restaurants} onRestaurantTabSelect={setSelectedTab}/>
-            <RestaurantsList restaurants={filteredRestaurants}/>
+            <RestaurantCategories restaurants={restaurants} onRestaurantTabSelect={setSelectedRestaurantIndex}/>
+            <RestaurantsList restaurant={selectedRestaurant} index={selectedRestaurantIndex}/>
         </>
     )
 }

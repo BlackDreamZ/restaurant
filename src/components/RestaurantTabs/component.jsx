@@ -10,7 +10,7 @@ export const RestaurantCategories = ({restaurants, onRestaurantTabSelect}) => {
             {Array.from(new Set(restaurants)).map(
                 ({name}, index) => (
                 <li key={index}>
-                    <RestaurantTab onClick={() => onRestaurantTabSelect(name)}>{name}</RestaurantTab>
+                    <RestaurantTab onClick={() => onRestaurantTabSelect(index)}>{name}</RestaurantTab>
                 </li>
             ))}
         </ul>
