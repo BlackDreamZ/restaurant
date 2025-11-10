@@ -1,4 +1,5 @@
 import './style.scss';
+import {Dish} from "../dish/component.jsx";
 
 export const RestaurantCard = ({ restaurant }) => {
 
@@ -9,7 +10,7 @@ export const RestaurantCard = ({ restaurant }) => {
             <h2>{restaurant?.name}</h2>
             <h3>{restaurant?.name} menu:</h3>
             <ul className="restaurantCard__menu">
-                {restaurant?.menu.map((dish) => <li>{dish?.name}</li>)}
+                {restaurant?.menu.map((dish) => <Dish key={dish} nameOfDish={dish?.name} />)}
             </ul>
             <h3>{restaurant?.name} reviews:</h3>
 

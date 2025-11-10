@@ -1,0 +1,15 @@
+.restaurantCard__menu-dish {
+  display: flex;
+  gap: 20px;
+
+  .Menu__nameOfDish {
+    margin: auto;
+  }
+
+  .counter {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
