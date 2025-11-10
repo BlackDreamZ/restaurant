@@ -1,0 +1,17 @@
+.restaurantCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
