@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './normalize.css'
 import {restaurants} from './constants/mock.js';
-import {RestaurantPage} from "./pages/restaurantPage.jsx";
+import {RestaurantPage} from "./pages/restaurantPage/restaurantPage.jsx";
 
 function App() {
   const [count, setCount] = useState(0)

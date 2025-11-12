@@ -1,8 +1,8 @@
 import './style.scss'
 
-export const RestaurantItemNav = ({ restaurantName, key }) => {
+export const RestaurantItemNav = ({ restaurantName, selectRestaurant, key }) => {
 
     if (!restaurantName) return null;
 
-    return <div className="restaurantItemNav" key={key}>{restaurantName}</div>;
+    return <button className="restaurantItemNav" key={key} onClick={() => selectRestaurant(restaurantName)}>{restaurantName}</button>;
 }
