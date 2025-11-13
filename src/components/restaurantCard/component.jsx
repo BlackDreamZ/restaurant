@@ -1,5 +1,6 @@
 import './style.scss';
 import {Dish} from "../dish/component.jsx";
+import {ReviewForm} from "../reviewForm/component.jsx";
 
 export const RestaurantCard = ({ restaurant }) => {
 
@@ -17,6 +18,7 @@ export const RestaurantCard = ({ restaurant }) => {
             <ul className="restaurantCard__reviews">
                 {restaurant?.reviews.map((review) => <li>{review?.text}</li>)}
             </ul>
+            <ReviewForm />
         </div>
     );
 }
