@@ -1,6 +1,8 @@
 .restaurantCard__menu-dish {
   display: flex;
   gap: 20px;
+  width: -webkit-fill-available;
+  margin: 10px;
 
   .Menu__nameOfDish {
     margin: auto;
